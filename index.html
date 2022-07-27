@@ -22,7 +22,21 @@
                             <li><a href="#">تماس با ما</a></li>
                         </ul>
                     </div>  
-                    <div class="mobile-main-menu">
+                    <div onclick="showMenu()" class="mobile-main-menu">
+                        <div id="drawer-menu">
+                            <div class="background">
+                                <div class="menu">
+                                    <ul>
+                                        <li><a href="#"><i class="fa-solid fa-angle-left"></i>صفحه اصلی</a></li>
+                                        <li><a href="#"><i class="fa-solid fa-angle-left"></i>درباره ما</a></li>
+                                        <li><a href="#"><i class="fa-solid fa-angle-left"></i>سرویس‌ها</a></li>
+                                        <li><a href="#"><i class="fa-solid fa-angle-left"></i>تیم</a></li>
+                                        <li><a href="#"><i class="fa-solid fa-angle-left"></i>بلاگ</a></li>
+                                        <li><a href="#"><i class="fa-solid fa-angle-left"></i>تماس با ما</a></li>
+                                    </ul>      
+                                </div>
+                            </div>
+                        </div>
                         <i class="fa-solid fa-bars"></i>
                     </div>  
                 </div>
@@ -470,5 +484,11 @@
             <div class="right">قدرت گرفته از کدینگ فرانت</div>
             <div class="left">ساخته شده توسط فیروزه</div>
         </div>
+        <script>
+            function showMenu() {
+                var drawershow = document.getElementById("drawer-menu");
+                drawershow.classList.toggle("show")
+            }
+        </script>
     </body>
 </html>
